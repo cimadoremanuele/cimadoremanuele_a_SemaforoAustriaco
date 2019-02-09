@@ -1,9 +1,9 @@
 int verde2 = 7;
 int giallo2 = 8;
 int rosso2 = 9;
-int rosso1 = 11;
+int verde1 = 11;
 int giallo1 = 12;
-int verde1 = 13;
+int rosso1 = 13;
 int numLampeggi;
 int tempoLampeggi;
 int tempoGiallo;
@@ -20,19 +20,19 @@ void setup() {
   
   Serial.begin(9600);
   
-  Serial.println("quanti lampeggi verdi?");
+  Serial.println("Quanti lampeggi verdi?");
   while (Serial.available() == 0){};
   numLampeggi = Serial.readString().toInt();
 
-  Serial.println("quanti durano i lampeggi del verde?");
+  Serial.println("Quanto durano i lampeggi del verde?");
   while (Serial.available() == 0){};
   tempoLampeggi = Serial.readString().toInt();
   
-  Serial.println("quanti tempo rimane acceso il giallo?");
+  Serial.println("Quanto tempo rimane acceso il giallo?");
   while (Serial.available() == 0){};
   tempoGiallo = Serial.readString().toInt();
 
-  Serial.println("quanti tempo rimane acceso il verde?");
+  Serial.println("Quanto tempo rimane acceso il verde?");
   while (Serial.available() == 0){};
   tempoVerde = Serial.readString().toInt();
 }
