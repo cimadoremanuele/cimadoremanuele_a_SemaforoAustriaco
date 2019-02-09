@@ -4,19 +4,19 @@ int rosso2 = 9;
 int verde1 = 11;
 int giallo1 = 12;
 int rosso1 = 13;
-int numLampeggi;
-int tempoLampeggi;
-int tempoGiallo;
-int tempoVerde;
+int numLampeggi; //numero lampeggi
+int tempoLampeggi; //tempo lampeggi
+int tempoGiallo; //tempo giallo
+int tempoVerde; //tempo verde
 
 void setup() {
   // put your setup code here, to run once:
-  pinMode(7, OUTPUT);
-  pinMode(8, OUTPUT);
-  pinMode(9, OUTPUT);
-  pinMode(11, OUTPUT);
-  pinMode(12, OUTPUT);
-  pinMode(13, OUTPUT);
+  pinMode(7, OUTPUT); //verde2
+  pinMode(8, OUTPUT); //giallo2
+  pinMode(9, OUTPUT); //rosso2
+  pinMode(11, OUTPUT);//verde1
+  pinMode(12, OUTPUT);//giallo1
+  pinMode(13, OUTPUT);//rosso1
   
   Serial.begin(9600);
   
